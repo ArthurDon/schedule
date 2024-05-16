@@ -1,23 +1,33 @@
-.contato ul{
+.contato ul {
     display: flex;
-    padding: 0%;
+    padding: 0;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.contato ul li{
+
+.contato ul li {
     list-style: none;
     color: #212529;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
     text-align: left;
-
+    flex: 1 1 auto; /* Garante que os <li> ocupem espaço disponível */
+    margin: 10px; /* Adiciona margem para separar os itens */
 }
-.contato ul li button{
+
+.contato ul li:first-child {
+    flex: 2 1 auto; /* Dá mais espaço para o li que contém o input */
+}
+
+.po-input {
+    width: 100%; /* Garante que o po-input ocupe toda a largura do li */
+}
+
+.contato ul li button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-
 }

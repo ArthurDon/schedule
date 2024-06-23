@@ -1,16 +1,12 @@
 <section class="contato">
     <ul>
         <li>
-            <strong>{{nome}}</strong>
+            <po-input p-disabled="true" p-label="{{ nome }}" [(ngModel)]="telefone" ></po-input>
         </li>
-        <li>{{telefone}}</li>
         <li>
-            <button>
-                <img src="/assets/pencil-square.png" alt="">
-            </button>
-            <button>
-                <img src="/assets/trash.png" alt="">
-            </button>
+            <po-button p-label="Editar" p-icon="po-icon-user" > </po-button>
+            <po-button p-label="Apagar" p-icon="po-icon-news" > </po-button>
+            <po-divider></po-divider>
         </li>
     </ul>
 </section>
